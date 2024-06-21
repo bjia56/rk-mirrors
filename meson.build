@@ -30,7 +30,7 @@ librga_srcs = [
 
 incdir = include_directories('include', 'im2d_api', 'core/hardware', 'core/utils', 'core/3rdparty/libdrm/include/drm')
 
-librga = shared_library(
+librga = library(
     'rga',
     librga_srcs,
     dependencies : [libthreads_dep],
